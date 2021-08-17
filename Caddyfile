@@ -1,0 +1,7 @@
+localhost {
+    encode zstd gzip
+    root * /srv
+    try_files {path}.html {path}
+    file_server
+    push
+}
